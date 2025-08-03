@@ -1,0 +1,98 @@
+---
+title: "ReadmMe"
+author: "Statistical Application 2"
+date: '2025-08-03'
+output: pdf_document
+---
+
+```{r}
+# 🛍️ Retail Demand Analysis – Reducing Stockouts with R & Six Sigma DMAIC
+
+>  A data-driven inventory analysis project to understand and reduce stockouts in retail stores using R and the Six Sigma DMAIC framework.
+
+```
+
+```{r}
+## 📌 Project Overview
+
+This project focuses on identifying, analyzing, and reducing **stockouts** (out-of-stock events) in a simulated retail dataset. By applying the **DMAIC (Define, Measure, Analyze, Improve, Control)** method, we explore how promotions, seasonality, and product categories affect inventory performance.
+
+The project uses **R programming** (compatible with older versions) to process and visualize over 76,000 observations from 5 product categories across multiple stores.
+
+```
+
+```{r}
+## 🎯 Objectives
+
+- Quantify stockout rates across products and stores
+- Analyze seasonal and promotional impacts on sales and inventory
+- Visualize stockout patterns with heatmaps, bar plots, and Pareto charts
+- Recommend improvements like dynamic safety stock, SKU segmentation (ABC), and promotion-aware forecasting
+
+```
+
+```{r}
+## 🔧 Tools & Technologies
+
+- **R (base R, compatible with R 3.x)**
+- **ggplot2** – for visualizations
+- **dplyr** – for data aggregation and transformation
+- **reshape2** – for creating pivot tables and heatmaps
+
+```
+
+```{r}
+##  Dataset
+
+-  **Source:** [Kaggle - Retail Store Inventory and Demand Forecasting](https://www.kaggle.com/datasets/atomicd/retail-store-inventory-and-demand-forecasting)
+- **Period:** January 2022 – January 2024
+-  **Observations:** 76,000 rows, 17 variables  
+-  **Product Categories:** Electronics, Clothing, Groceries, Toys, Furniture
+
+```
+
+```{r}
+## 📉 Key Metrics
+
+- **Stockout Definition:** Inventory Level == 0  
+- **Overall Stockout Rate:** Calculated as `% of rows with stockout`
+- **Group Analysis:** By `Store`, `Product`, `Season`, and `Promotion`
+```
+
+```{r}
+## 📊 Visualizations
+
+-  **Heatmap** – Average stockout rate by Store x Product
+-  **Bar Plot** – Stockouts per Store-Product pair
+-  **Seasonal Impact** – Sales and stockouts by season
+-  **Promotion Impact** – Sales and stockouts by promotion status
+- **Pareto Chart** – Stockouts by category
+```
+
+```{r}
+##  Summary of Results
+
+- Highest stockouts observed in **Groceries**, especially during **Winter and promotional periods**
+- Promotions increase sales but also raise risk of stockouts
+- Stores have varying performance in stockout rates due to possible planning issues
+```
+
+```{r}
+## 🛠️ Suggested Improvements
+
+-  **Seasonal forecasting models** for peak periods  
+- **Promotion-aware forecasting engine**  
+-  **Dynamic safety stock calculation** based on demand volatility  
+- ️ **ABC SKU classification** to focus inventory management  
+-  **Weekly KPI dashboards using P-charts**
+
+```
+
+```{r}
+
+```
+
+
+
+
+
